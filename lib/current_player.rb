@@ -1,14 +1,7 @@
 def turn_count(board)
-  counter = 0
-  if token == "X" or token == "O"
-  counter +=1
-  end
+  board.count{ |token| token == "X" || token == "O"}
 end
 
 def current_player(board)
-  if counter % 2
-    token == "X"
-  else
-    token == "O"
-  end
+    turn_count(board) % 2 == 0? "X" : "O"
 end
