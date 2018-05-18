@@ -7,8 +7,8 @@ end
 
 def current_player(board)
   if counter % 2
-    token == "X"
+    token = "X"
   else
-    token == "O"
+    token = "O"
   end
 end
